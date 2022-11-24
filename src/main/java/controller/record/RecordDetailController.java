@@ -1,13 +1,18 @@
-package controller.extra;
+package controller.record;
 
 import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import controller.Controller;
+import controller.exerciser.ExerciserSessionUtils;
+import model.Exerciser;
+import model.Record;
 import model.service.RecordManager;
+import model.service.exerciserManager;
 
 // 각각의 기록에 대한 상세 기록 조회
 public class RecordDetailController implements Controller {

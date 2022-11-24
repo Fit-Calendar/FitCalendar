@@ -10,5 +10,5 @@ import org.slf4j.LoggerFactory;
 import controller.Controller;
 
 public class MatchingWantRecommendForm implements Controller {
-	int height = Integer.getInteger(request.)
+	//int height = Integer.getInteger(request.)
 }

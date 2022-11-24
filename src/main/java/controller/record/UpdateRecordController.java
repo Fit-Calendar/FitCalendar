@@ -1,17 +1,18 @@
-package controller.extra;
+package controller.record;
 
 import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import controller.Controller;
 import controller.exerciser.ExerciserSessionUtils;
 import model.Exerciser;
+import model.Record;
 import model.service.RecordManager;
-import model.service.exerciserManager;
+import model.service.ExerciserManager;
 
 public class UpdateRecordController implements Controller {
 
@@ -29,7 +30,7 @@ public class UpdateRecordController implements Controller {
 			Record record = manager.findRecordDetails(recordId); // recordId로 사용자가 작성한 Record 정보를 가져온다
 			request.setAttribute("record", record);
 
-			exerciserManager exMgr = exerciserManager.getInstance();
+			ExerciserManager exMgr = ExerciserManager.getInstance();
 			// record의 int형 exerciserId로 String id값을 가져와야 함.
 			Exerciser exerciser = exMgr.findExerciserById(record.getExerciserId());
 

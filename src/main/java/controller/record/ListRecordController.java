@@ -1,16 +1,17 @@
-package controller.extra;
+package controller.record;
 
 import java.util.List;
+
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import controller.Controller;
 import controller.exerciser.ExerciserSessionUtils;
 import model.service.RecordManager;
+import model.Record;
 
 // 사용자가 작성한 전체 기록을 조회
 public class ListRecordController implements Controller {

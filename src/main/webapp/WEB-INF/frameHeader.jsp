@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@page import="model.*" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <body>
 	<div class="flex-container">
@@ -40,7 +42,7 @@
                             <a href="#" class="link best">Fit Mate</a>
                         </li>
                         <li class="menu4">
-                            <a href="#" class="link bargain">추천/매칭</a>
+                            <a href="<c:url value='/matching/startMatching' />" class="link bargain">추천/매칭</a>
                         </li>
                         <li class="menu5">
                             <a href="#" class="link event">마이페이지</a>

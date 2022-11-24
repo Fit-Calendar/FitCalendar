@@ -1,4 +1,4 @@
-package controller.extra;
+package controller.record;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import controller.Controller;
 import model.service.RecordManager;
+import model.Record;
 
 // 전체 사용자의 전체 기록 조회
 public class AllRecordController implements Controller {
