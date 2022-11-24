@@ -15,6 +15,7 @@ public class MatchingDao {
 	public MatchingDao() { // 생성자
 		jdbcUtil = new JDBCUtil(); // JDBCUtil 객체 생성 및 활용
 	}
+	
 	/**
 	 * useMatchSvc 버튼 클릭 시, exerciser table의 useMatchSvc 값 생성
 	 */
